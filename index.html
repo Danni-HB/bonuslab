@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
        <meta charset="UTF-8"/>
 	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="css/style.css">
        <title>Bonus Lab Daniela Herrera</title>
-    </head>
-    <body>
-        <div class="page-head">
-            <div class="logo">
-            <a>
-            <img src="images/logo.png" alt="logo">
-            </a>
-            </div>
+</head>
+<body>
+        <div class="logo">
+            <img  src="images/logo.png" alt="logo">
         </div>
+        <h2 class="description">Checkout form</h2>
         <p class="description">
             Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be
             triggered by attempting to submit the form without completing it.
         </p>
-        <section class="address">
+    <div class="container">
+        <form class="paymentForm">
             <h4>Billing Address</h4>
-            <input class="table" type="text" name="name" id="name">
-            <input class="table" type="text" name="lastname" id="lastname">
-            <input class="table" type="text" name="username" id="username" placeholder="Username">
-            <input class="table" type="email" name="email" id="email" placeholder="you@example.com">
-            <input class="table" type="text" name="address" id="address" placeholder="1234 Main St">
-            <input class="table" type="text" name="address2" id="address2" placeholder="Apartment or suite">
+            <div>
+                <label for="date">Date:</label></br>
+                <input class="table" type="datetime-local" name="date" id="date" readonly>
+            </div>
+            <div>
+                <label for="name">First name:             </label><label for="lastname">Last name:</label></br>
+                <input class="table" type="text" name="name" id="name">
+
+                
+                <input class="table" type="text" name="lastname" id="lastname">
+            </div>
+            <div>
+                <label for="username">Username:</label></br>
+                <input class="table" type="text" name="username" id="username" placeholder="Username">
+            </div>
+            <div>
+                <label for="email">Email:</label></br>
+                <input class="table" type="email" name="email" id="email" placeholder="you@example.com">
+            </div>
+            <div>
+                <label for="address">Address:</label></br>
+                <input class="table" type="text" name="address" id="address" placeholder="1234 Main St">
+            </div>
+            <div>
+                <label for="address2">Address2:</label></br>
+                <input class="table" type="text" name="address2" id="address2" placeholder="Apartment or suite">
+            </div>
             <hr>
+
             <input type="checkbox" name="miCheckbox" value="valor1"> Shipping address is the same as my billing address
+        </br>
             <input type="checkbox" name="miCheckbox" value="valor2"> Save this information for next time
+
             </label>
             <hr>
-            <p>Payment option</p>
+            <h4>Payment option</h4>
             <input type="radio" name="creditcard" value="creditcard"> Credit card
+        </br>
             <input type="radio" name="debitcard" value="debitcard"> Debit card
+        </br>
             <input type="radio" name="paypal" value="paypal"> Paypal
+        </br>
+            <label for="nameoncard">Name on card</label>
             <input class="table" type="text" name="nameoncard" id="nameoncard">
+            <label for="numberoncard">Number on card</label>
             <input class="table" type="text" name="numoncard" id="numoncard">
+        </br>
+            <label for="expiration">Expiration</label>
             <input class="table" type="text" name="expiration" id="expiration">
+            <label for="cvv">CVV:</label>
             <input class="table" type="text" name="cvv" id="cvv">
             <hr>
-            <input class="botons" type="submit" value="Continue to checkout">
+            <input class="button" type="submit" value="Continue to checkout">
           
 
-          </section>
-
+        </form>
+    </div>
         
         
     </body>
