@@ -1,3 +1,23 @@
 body{
     background-color: #f8f9fa;
 }
+.table{
+    width: 100%;
+    background: #ffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid gray;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  .address .botons {
+    width: 100%;
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
