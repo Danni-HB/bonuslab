@@ -14,6 +14,10 @@
             </a>
             </div>
         </div>
+        <p class="description">
+            Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be
+            triggered by attempting to submit the form without completing it.
+        </p>
         <section class="address">
             <h4>Billing Address</h4>
             <input class="table" type="text" name="name" id="name">
@@ -23,15 +27,22 @@
             <input class="table" type="text" name="address" id="address" placeholder="1234 Main St">
             <input class="table" type="text" name="address2" id="address2" placeholder="Apartment or suite">
             <hr>
-            <label>
             <input type="checkbox" name="miCheckbox" value="valor1"> Shipping address is the same as my billing address
-            </label>
-            <label>
             <input type="checkbox" name="miCheckbox" value="valor2"> Save this information for next time
             </label>
             <hr>
+            <p>Payment option</p>
+            <input type="radio" name="creditcard" value="creditcard"> Credit card
+            <input type="radio" name="debitcard" value="debitcard"> Debit card
+            <input type="radio" name="paypal" value="paypal"> Paypal
+            <input class="table" type="text" name="nameoncard" id="nameoncard">
+            <input class="table" type="text" name="numoncard" id="numoncard">
+            <input class="table" type="text" name="expiration" id="expiration">
+            <input class="table" type="text" name="cvv" id="cvv">
+            <hr>
             <input class="botons" type="submit" value="Continue to checkout">
-            <p><a href="#">¿Ya tengo Cuenta?</a></p>
+          
+
           </section>
 
         
